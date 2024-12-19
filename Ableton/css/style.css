@@ -1,0 +1,447 @@
+@import url('satoshi.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Satoshi-Regular;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    
+    margin-right: 50px;
+    
+}
+  
+.left {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    list-style: none;
+    font-size: 13px;
+}
+
+.logo-text {
+    color: #ff764d;
+    font-size: 18px;
+}
+
+.right {
+    display: flex;
+    gap: 30px;
+}
+
+.right a p {
+    font-size: 13px;;
+}
+
+.free {
+    color: #0000ff;
+}
+
+nav i {
+    cursor: pointer;
+}
+.header-link {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-self: flex-start;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    width: 50%;
+    height: 100vh;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 0 20px;
+    padding-top: 20px;
+
+    
+}
+
+.ri-menu-line {
+    display: none;
+    font-size: 18px;
+}
+
+.ri-close-line {
+    font-size: 18px;
+}
+
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.about {
+    color: #ff764d;
+}
+
+/* .container {
+    max-width: 1200px;
+   display: flex;
+    margin: 0 auto;
+    padding: 20px 50px;
+
+} */
+
+.header-main {
+    display: flex;
+    position: relative;
+    max-width: 1000px;
+    height: 400px;
+    
+   
+}
+
+
+
+.header-cont {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-main img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.header-main h1 {
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.about-position {
+    position: relative; 
+    width: 100%;
+    height: 500px;
+    background: white; 
+}
+
+.yellow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62%; 
+    height: 100%;
+    background: #fbffa7; 
+    z-index: 0;
+}
+
+.about-first {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 42%; 
+    z-index: 1; 
+}
+.about-second {
+    position: absolute;
+    top: 30%;
+    right: 12%;
+    width: 30%; 
+    z-index: 2; 
+}
+
+.section {
+    margin-top: 70px;
+    margin-bottom: 0;
+    
+}
+.about-section,
+.why-section,
+.team-section,
+.job-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-section {
+    margin-bottom: 0;
+}
+
+.team-section {
+    margin-top: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 70px;
+    text-align: left;
+    
+}
+
+.section-header {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.section-header span {
+    color: #0000ff;
+}
+
+.section-p {
+    font-size: 0.8rem;
+}
+
+.why-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+    
+    
+}
+
+.why-image img {
+    width: 40%;
+}
+
+.why-image p {
+    font-size: 9px;
+    margin-top: 5px;
+    
+}
+.team-position {
+    position: relative; 
+    width: 100%;
+    height: 600px;
+    background: white; 
+}
+.green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62%; 
+    height: 100%;
+    background: #b6ffc0; 
+    z-index: 0;
+}
+
+.team-first {
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    width: 42%; 
+    z-index: 1; 
+}
+.team-second {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 28%; 
+    z-index: 2; 
+}
+
+.team-third {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    width: 28%; 
+    z-index: 3; 
+}
+
+.job-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 70px;
+}
+
+
+.job-flex img {
+    width: 100%;
+    height: auto;
+}
+
+.blue {
+    background-color: #b1c5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.blue h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.blue a {
+    color: #0000ff;
+    font-size: 0.8rem;
+}
+hr {
+    opacity: 0.3;
+}
+
+@media (max-width: 1250px) {
+    .nav-bar {
+        padding: 20px 50px;
+    }
+
+    .header-link {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-cont {
+        max-width: 900px;
+    }
+    .section {
+        margin-top: 40px;
+        margin-bottom: 0;
+        
+    }
+
+    .about-position {
+        height: 400px;
+    }
+
+    .yellow {
+        top: 0;
+        right: 0;
+        width: 55%; 
+        height: 100%;
+        background: #fbffa7; 
+        z-index: 0;
+    }
+    
+    .about-first {
+        top: 20%;
+        left: 7%;
+        width: 46%; 
+        z-index: 1; 
+    }
+    .about-second {
+        top: 30%;
+        right: 12%;
+        width: 34%; 
+        z-index: 2; 
+    }
+
+    .why-image img {
+        width: 60%;
+        margin-bottom: 0%;
+    }
+
+    .team-position {
+        height: 450px;
+    }
+    .green {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55%; 
+        height: 100%;
+        background: #b6ffc0; 
+        z-index: 0;
+    }
+    
+    .team-first {
+        position: absolute;
+        top: 20%;
+        right: 7%;
+        width: 45%; 
+        z-index: 1; 
+    }
+    .team-second {
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        width: 26%; 
+        z-index: 2; 
+    }
+    
+    .team-third {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        width: 26%; 
+        z-index: 3; 
+    }
+    .job-section {
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        margin: 30px auto;
+    }
+
+}
+@media (max-width: 950px) {
+    .header-cont {
+        max-width: 800px;
+    }
+    .job-section {
+        max-width: 700px;
+    }
+
+    .ri-menu-line {
+        display: block;
+    }
+
+    .right,
+    .nav-list {
+        display: none;
+    }
+
+    
+    
+}
